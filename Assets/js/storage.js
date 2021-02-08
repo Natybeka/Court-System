@@ -15,11 +15,16 @@ function User(userName, accessType, password){
     and courtLevel (level at which the case is currently being heard)
     finally a method for changing courtLevel and status
 */
-function Case(caseID, status, plaintiff, defendant, judge, courtLevel, nextCourtDate) {
-    this.caseID = caseID;
-    this.status = status;
+function Case(caseID, status, plaintiff, defendant, judge, courtLevel, nextCourtDate, caseType,caseDescription) {
+    //From the user
+    this.caseDescription = caseDescription;
+    this.caseType = caseType;
     this.plaintiff = plaintiff;
     this.defendant = defendant;
+
+    //From the admin
+    this.caseID = caseID;
+    this.status = status;
     this.courtLevel = courtLevel;
     this.judge = judge;
     this.nextCourtDate = nextCourtDate;
@@ -42,10 +47,15 @@ function Case(caseID, status, plaintiff, defendant, judge, courtLevel, nextCourt
 }
 
 // Request Objects to store the 
-function Request(requestID, requestType, handled, userRequested) {
+function Request(requestID, requestType, handled, userRequested,description, plaintiff, defendant) {
     this.requestID = requestID;
     this.requestType = requestType;
-    this.requested = userRequested;
+    //Similar to case object fields
+    this.description = description;
+    this.plaintiff = plaintiff;
+    this.defendant = defendant;
+    
+    this.userRequested = userRequested;
     this.handled = handled;
 }
 
