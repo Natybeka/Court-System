@@ -1,0 +1,46 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: content-box;
+}
+.navigation{   
+    width: 95%;
+    margin-bottom: 50px;
+}
+.navbar{
+    border-radius: 30px;
+    margin-left: 35px;
+    margin-top: 50px;
+}
+#navbarSupportedContent li a{
+    color:black;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+#navbarSupportedContent li a:hover{
+    color: rgb(202, 32, 32)
+}
+.container {
+  background-color:gray;
+  color: white;
+  width: 100%;
+  align-content: center;
+  margin-top: 100px;
+  padding: 0 25px 25px 25px;
+}
+
+div #Cases{
+    margin-top: 100px;
+}
+#cases p{
+padding: 15px;
+}
+div .card {
+    margin-left: 55px;
+    margin-bottom: 15px;
+    background-color: rgba(24, 23, 23, 0.26);
+    color: white;
+   
+}
+
+
